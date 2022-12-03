@@ -27,7 +27,7 @@ public class PlayerMoveYandex : MonoBehaviour
             _oldMousePositionX = Input.mousePosition.x;
 
             _eulerY += deltaX;
-            _eulerY = Mathf.Clamp(_eulerY, -70f, 70f);
+            _eulerY = Mathf.Clamp(_eulerY, -270f, 270f);
             transform.eulerAngles = new Vector3(0, _eulerY, 0);
         }
 
